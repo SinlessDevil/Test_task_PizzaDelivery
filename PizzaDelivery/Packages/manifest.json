@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.adaptiveperformance.samsung.android": "4.0.2",
     "com.unity.collab-proxy": "1.15.12",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.feature.mobile": "1.0.0",

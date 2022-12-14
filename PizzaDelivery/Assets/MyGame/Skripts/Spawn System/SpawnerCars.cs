@@ -51,6 +51,7 @@ namespace SpawnGameObject
 
         private void DeletePoints(int points)
         {
+            //if (_positionSpawns.Count == _pooCount) return;
             _positionSpawns.RemoveRange(0,points); 
         }
     }

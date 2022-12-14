@@ -11,7 +11,7 @@ namespace AudioGame
         private void Awake()
         {
             if(Instance != null){
-                Destroy(gameObject);
+                Destroy(this.gameObject);
             }
             Instance = this;
             DontDestroyOnLoad(this);
@@ -31,6 +31,7 @@ namespace AudioGame
         private void Start()
         {
             PlayClip(SoundDictionary.AUDIO_CLIP_BG_MUSIC);
+            PlayClip(SoundDictionary.AUDIO_CLIP_CARS_DRIVE);
 
         }
 

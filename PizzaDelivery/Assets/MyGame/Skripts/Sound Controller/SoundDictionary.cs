@@ -9,5 +9,6 @@ namespace AudioGame
         public const string AUDIO_CLIP_FIREWORK_END= "FireworkEnd";
         public const string AUDIO_CLIP_FIREWORK_START = "FireWorkStart";
         public const string AUDIO_CLIP_BOOM = "Boom";
+        public const string AUDIO_CLIP_CARS_DRIVE = "ÑarsDrive";
     }
 }

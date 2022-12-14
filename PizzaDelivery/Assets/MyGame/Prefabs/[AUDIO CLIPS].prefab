@@ -94,3 +94,10 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: "\u0421arsDrive"
+    clip: {fileID: 8300000, guid: 6e01379b42f9a994784947cdffe87dad, type: 3}
+    volume: 0.03
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
