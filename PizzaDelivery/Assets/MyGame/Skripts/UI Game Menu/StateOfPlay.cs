@@ -49,7 +49,6 @@ public class StateOfPlay : MonoBehaviour
 
         AudioClips.Instance.PlayClip(SoundDictionary.AUDIO_CLIP_GAME_OVER);
     }
-
     private void GamePause(GameObject activePanel)
     {
         //Stop All Coroutines (Timer,Spawner)
@@ -69,7 +68,6 @@ public class StateOfPlay : MonoBehaviour
             .Append(activePanel.transform.DOScale(1, 2f))
             .AppendCallback(Pause);
     }
-
     private void Pause()
     {
         _panelIsNotInteractive.SetActive(false);

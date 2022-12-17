@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,8 +16,7 @@ namespace SpawnGameObject
         private PoolMono<LandTransport> _pool;
 
         private const float WAIT_TIME = 2f;
-        private void Start()
-        {
+        private void Start(){
             _pool = new PoolMono<LandTransport>(_carsPrefabs, _pooCount, transform);
             _pool.autoExpand = _autoExpand;
             SpawnCars();
@@ -30,27 +28,22 @@ namespace SpawnGameObject
         private void OnDisable() => PointCollison.DeletePointsEvent -= DeletePoints;
 
 
-        private void SpawnCars()
-        {
-            foreach (var item in _positionSpawns)
-            {
+        private void SpawnCars(){
+            foreach (var item in _positionSpawns){
                 var cube = _pool.GetFreeElement();
                 if (cube == null) break;
                 cube.transform.position = item.position;
             }
         }
 
-        private IEnumerator SpawnCarsCoroutine()
-        {
-            while (true)
-            {
+        private IEnumerator SpawnCarsCoroutine(){
+            while (true){
                 yield return new WaitForSeconds(WAIT_TIME);
                 SpawnCars();
             }
         }
 
-        private void DeletePoints(int points)
-        {
+        private void DeletePoints(int points){
             //if (_positionSpawns.Count == _pooCount) return;
             _positionSpawns.RemoveRange(0,points); 
         }

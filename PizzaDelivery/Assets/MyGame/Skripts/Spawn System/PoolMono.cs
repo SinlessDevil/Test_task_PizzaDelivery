@@ -11,27 +11,23 @@ namespace SpawnGameObject
 
         private List<T> _pool;
 
-        public PoolMono(T[] prefab, int count)
-        {
+        public PoolMono(T[] prefab, int count){
             this.prefab = prefab;
             container = null;
 
             CreatePool(count);
         }
-        public PoolMono(T[] prefab, int count, Transform container)
-        {
+        public PoolMono(T[] prefab, int count, Transform container){
             this.prefab = prefab;
             this.container = container;
 
             CreatePool(count);
         }
 
-        private void CreatePool(int count)
-        {
+        private void CreatePool(int count){
             _pool = new List<T>();
 
-            for (int i = 0; i < count; i++)
-            {
+            for (int i = 0; i < count; i++){
                 CreateObject();
             }
         }
@@ -44,12 +40,9 @@ namespace SpawnGameObject
             return createdObject;
         }
 
-        public bool HasFreeElement(out T element)
-        {
-            foreach (var mono in _pool)
-            {
-                if (!mono.gameObject.activeInHierarchy)
-                {
+        public bool HasFreeElement(out T element){
+            foreach (var mono in _pool){
+                if (!mono.gameObject.activeInHierarchy){
                     element = mono;
                     mono.gameObject.SetActive(true);
                     return true;
@@ -59,14 +52,11 @@ namespace SpawnGameObject
             element = null;
             return false;
         }
-        public T GetFreeElement()
-        {
-            if (HasFreeElement(out var element))
-            {
+        public T GetFreeElement(){
+            if (HasFreeElement(out var element)){
                 return element;
             }
-            if (autoExpand)
-            {
+            if (autoExpand){
                 return CreateObject(true);
             }
 
