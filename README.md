@@ -17,24 +17,24 @@ that can pop out from around corners. Some kind of analogue of Crossy Road.
 Reaching point N, the player throws a pizza to the customer (conditional
 cylinder).
 
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Game_Play_Task_PizzaDeviler-001.png)
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Game_Play_Task_PizzaDeviler.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/GamePlay_PizzaDelivery_1.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/GamePlay_PizzaDelivery_2.png)
 
 In this test task I used the following patterns
 
 Pattern Object Pooling: where you pre-instantiate all the objects you’ll need at any specific moment before gameplay — for instance, 
 during a loading screen. Instead of creating new objects and destroying old ones during gameplay, your game reuses objects from a “pool”.
 
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Pool_Mono_Task_PizzaDeviler.png)
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Pool_Mono_Task_PizzaDeviler1.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/Pool_Mono_Task_PizzaDeviler.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/Pool_Mono_Task_PizzaDeviler_1.png)
 
 Pattern Singleton: is a creational design pattern, 
 which ensures that only one object of its kind exists and provides a single point of access to it for any other code.
 
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Singletone_Task_PizzaDeviler.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/Singletone_Task_PizzaDeviler.png)
 
 Pattern Observer: is a behavioral design pattern that allows some objects to notify other objects about changes in their state.
 Usage examples: The Observer pattern is pretty common in C# code, especially in the GUI components. It provides a way to react 
 to events happening in other objects without coupling to their classes.
 
-![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/Observer_Task_PizzaDeviler.png)
+![Image alt](https://github.com/SinlessDevil/Test_task_PizzaDelivery/blob/main/ScreenShots/Observer_Task_PizzaDeviler.png)
